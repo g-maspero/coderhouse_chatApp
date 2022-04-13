@@ -1,0 +1,9 @@
+<div id="messages">
+    {{#each messages}}
+    <div>
+        <span class="email_from">{{this.from}}: </span>
+        <span class="message_body">{{this.body}} </span>
+        <span class="message_time">{{this.timestamp}} </span>
+    </div>
+    {{/each}}
+</div>

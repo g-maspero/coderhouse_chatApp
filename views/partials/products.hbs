@@ -1,0 +1,21 @@
+<h3>Product List</h3>
+{{#if productListExists}}
+    <table class="table table-striped table-dark">
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+            <th scope="col">Thumbnail</th>
+        </tr>
+        <div id="products">
+            {{#each products}}
+                <tr>
+                    <td>{{this.title}}</td>
+                    <td>${{this.price}}</td>
+                    <td><img src={{this.thumbnail}}></td>
+                </tr>
+            {{/each}}
+        </div>    
+    </table>
+{{else}}
+    <h6>No products added yet!</h6>
+{{/if}}

@@ -1,0 +1,38 @@
+<h2>Add new product</h2>
+<form id="productForm">
+    <div class="form-group">
+        <label for="product_title">Title</label>
+        <input type="text" class="form-control" id="product_title" name="title" placeholder="Harry Potter">
+    </div>
+    <div class="form-group">
+        <label for="product_price">Price</label>
+        <input type="text" class="form-control" id="product_price" name="price" placeholder="25">
+    </div>
+    <div class="form-group">
+        <label for="product_thumbnail">Thumbnail</label>
+        <input type="text" class="form-control" id="product_thumbnail" name="thumbnail" placeholder="Thumbnail URL">
+    </div>
+    <div id="submit_button">
+        <button type="button" class="btn btn-dark" onclick="onSubmit()">Submit</button>
+    </div>
+</form>
+<div id="product_list">
+    {{> products }}
+</div>
+<div id="message_list">
+    <h2>Message Hub</h2>
+    <form id="messageForm">
+        <div class="form-group" id="email_input_container">
+            <input type="email" class="form-control" id="email_input" name="email" placeholder="angseton@gmail.com">
+        </div>
+        <hr/>
+        {{> messages }}
+        <div class="form-group" id="message_input_container">
+            <input type="text" class="form-control" id="message_input" name="message"
+                placeholder="Type your message...">
+        </div>
+        <div id="send_button">
+            <button type="button" class="btn btn-dark" onclick="sendMessage()">Send!</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,54 @@
+img {
+    height: 90px;
+}
+
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#product_list_button {
+    padding-top: 10px;
+}
+
+#submit_button {
+    padding-top: 10px;
+}
+
+#send_button {
+    padding-top: 10px;
+}
+
+#message_input_container {
+    padding-top: 10px;
+}
+
+.email_from {
+    color: #4e6266;
+}
+
+.message_time {
+    color: grey;
+    text-align: right;
+    font-size: xx-small;
+    font-style: italic;
+    padding-left: 4px;
+}
+
+.message_body {
+    color: #c5d0d9;
+}
+
+#product_list {
+    padding-top: 6px;
+}
+
+#message_list {
+    padding-top: 16px;
+}
+
+#messages {
+    padding: 4px;
+    background-color: #001b33;
+    border-radius: 4px;
+}
